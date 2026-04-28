@@ -1,17 +1,34 @@
-# Demo3
+# Beautiful
 
-This is a minimal static website that renders the text files in `components/` in order (`one.txt` → `ten.txt`).
+A React + Vite landing page built with Tailwind CSS, framer-motion, and a Spline 3D hero.
+
+🔗 **Live demo:** https://swethanarni01.github.io/beautiful/
 
 ## Run locally
 
-From the project root:
-
 ```bash
-python3 -m http.server 8000
+npm install
+npm run dev
 ```
 
-Then open:
+Then open http://localhost:5173/.
 
-- http://localhost:8000
+## Build
 
-> Note: Opening `index.html` directly as a `file://` URL may block `fetch()` in some browsers. Serving via a local web server avoids that.
+```bash
+npm run build
+```
+
+Output goes to `dist/`.
+
+## Deploy
+
+Pushes to `main` auto-deploy to GitHub Pages via [.github/workflows/deploy.yml](.github/workflows/deploy.yml).
+
+## Stack
+
+- React 18 + Vite 5
+- Tailwind CSS v4 (`@tailwindcss/vite`)
+- framer-motion (animations)
+- @splinetool/react-spline (3D hero)
+- lucide-react (icons)
